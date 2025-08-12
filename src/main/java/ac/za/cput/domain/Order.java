@@ -27,7 +27,7 @@ public class Order {
     @OneToMany(mappedBy = "order")
     private List<OrderItem> items;
 
-    protected Order() {
+    protected Order(int orderNumber, String productName, int quantity, double totalAmount) {
     }
 
     private Order(Builder builder) {
